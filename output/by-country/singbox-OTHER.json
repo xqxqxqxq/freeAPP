@@ -4,14 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.78.194",
+      "server": "172.64.152.23",
       "server_port": 443,
-      "uuid": "a170c1ac-d065-4643-bbf5-d0550d36b4fd",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "ger.chalghooz.com",
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "172.64.152.23",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.multiplydose.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,10 +39,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/cloude",
-        "headers": {
-          "Host": "ger.chalghooz.com"
-        }
+        "path": "/assignment"
       }
     },
     {
@@ -31,14 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
