@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 162.159.0.53
-  port: 8880
+  server: 162.159.45.19
+  port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -21,9 +21,9 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -31,7 +31,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -48,6 +48,20 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -71,6 +85,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +96,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
