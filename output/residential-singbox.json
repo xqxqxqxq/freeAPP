@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "203.137.165.164",
-      "server_port": 57554,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "de629d50-1711-11ed-bd7c-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/p/docs/soft?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "server_name": "a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -39,7 +28,8 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -47,7 +37,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ]
     },
@@ -55,7 +45,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"

@@ -4,21 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 203.137.165.164
-  port: 57554
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  server: a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /p/docs/soft?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  type: hysteria2
+  password: de629d50-1711-11ed-bd7c-f23c913c8d2b
+  sni: a2c6d68b-tm3mo0-u4mwoi-1jdha.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
@@ -38,14 +31,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
