@@ -6,21 +6,26 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "193.148.59.178",
+      "server": "104.21.8.63",
       "server_port": 443,
-      "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b19419fa-8009-455b-b059-765e2856883a",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "akbarian34.j9z65ce2uyks.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE",
-          "short_id": "e3daad69"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9?ed=2560",
+        "headers": {
+          "Host": "akbarian34.j9z65ce2uyks.workers.dev"
         }
       }
     },

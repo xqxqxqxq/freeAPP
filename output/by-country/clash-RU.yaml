@@ -10,8 +10,8 @@ proxies:
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  sni: 'off'
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 46.8.200.91
   port: 443
@@ -39,13 +39,17 @@ proxies:
   servername: ya.ru
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: msk.frkn.org
-  port: 443
+  server: 94.228.171.159
+  port: 8443
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
+  type: vless
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hcjZwWlIplwEKT-Ea-vTM2n4jwiTCeL9wTUZG0WgCj0
+  servername: de.b2ai.top
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
