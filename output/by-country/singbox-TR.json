@@ -5,24 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.53.114",
-      "server_port": 443,
-      "uuid": "7e26fd8f-d75a-473d-84ba-9f4e3f47d086",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "185.71.219.128",
+      "server_port": 2052,
+      "uuid": "f4ade6db-3c64-4939-9f32-788b87a9392f",
       "tls": {
         "enabled": true,
-        "server_name": "2-m20.20260721-b3fa-439e-b14e-6e2ee3f22b8c.ccwu.cc",
+        "server_name": "185.71.219.128",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/8qMLgNapWf6SBxo8fhQlVPYO",
-        "headers": {
-          "Host": "2-m20.20260721-b3fa-439e-b14e-6e2ee3f22b8c.ccwu.cc"
+          "fingerprint": "ios"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
