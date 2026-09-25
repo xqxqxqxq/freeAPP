@@ -5,37 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.161.144
-  port: 8443
+  server: 172.64.152.23
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
+    path: /assignment
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.67.161.144
-  port: 8443
+  server: 172.64.152.23
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
+  type: trojan
+  password: humanity
+  sni: www.multiplydose.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /assignment
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: 104.21.63.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  tls: true
+  servername: 7-m19.sOUTh-aFrica-CHAnNEl.CCWu.CC
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /CjBjB9sn5pCvaSwScc
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: 7-M19.SoutH-afRIcA-chaNnEl.CCwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +56,6 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
 rules:
 - MATCH,PROXIES
