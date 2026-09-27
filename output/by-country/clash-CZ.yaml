@@ -5,20 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 194.87.59.96
-  port: 2085
+  server: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+  port: 443
   udp: true
   type: vless
-  uuid: 6864bd16-f8bb-457c-a191-dca5b80ca32a
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  tls: true
+  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.93
+  server: 153.76.185.151
   port: 3090
   udp: true
   type: vless
-  uuid: d21a3080-7011-47a1-9b1e-297578f28b3f
+  uuid: 51c8ed23-7ca5-43f1-b0a8-0a37a7a16647
   network: grpc
   grpc-opts:
     grpc-service-name: vless
