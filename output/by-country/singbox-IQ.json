@@ -6,33 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.67.182.245",
-      "server_port": 443,
-      "uuid": "96e341a7-3077-4613-b482-41bd9c90cc4d",
-      "tls": {
-        "enabled": true,
-        "server_name": "eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "headers": {
-          "Host": "ezaccess-project-4c7950.ez-dc9bbb.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 02 - xiaohe",
-      "server": "arcturus.yokkastars.com",
+      "server": "178.17.57.34",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
@@ -41,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -55,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
