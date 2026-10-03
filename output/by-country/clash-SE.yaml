@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 143.246.196.207
   port: 443
   udp: true
@@ -29,17 +16,34 @@ proxies:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 199.68.198.13
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 5.157.10.148
   port: 443
   udp: true
   type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
