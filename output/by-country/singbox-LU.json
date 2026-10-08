@@ -5,20 +5,23 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "172.67.176.3",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
+      "server": "188.42.145.180",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": false
+        "server_name": "www.volumeroot.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/0962",
+        "path": "/assignment",
         "headers": {
-          "Host": "nimm.mpd.cc.cd"
+          "Host": "www.volumeroot.com"
         }
       }
     },
@@ -27,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
